@@ -6,18 +6,18 @@ This repository contains the implementation of **Module 1 (AI Auto-Category & Ta
 
 ## Architecture Overview
 
-The project follows a **Layered Architecture** to ensure a strict separation of AI logic and business logic, meeting the high-priority evaluation criteria for clean architecture.
+The project follows a **Layered Architecture** to ensure a strict separation of AI logic and business logic
 
 * **Controller Layer:** Manages HTTP requests, data validation using `Zod`, and database interactions.
 * **Service Layer (AI Logic):** Handles specialized communication with **Arcee AI (via OpenRouter)**. This layer manages prompt construction and handles structured JSON outputs.
-* **Models Layer:** Defines the MongoDB schemas for persistent storage of categorized products and generated B2B proposals.
+* **Models Layer:** Defines the schemas for persistent storage of categorized products and generated B2B proposals.
 * **Configuration:** Environment-based API key management using `dotenv` to ensure security.
 
 ---
 
 ## AI Prompt Design
 
-A core requirement was to provide structured AI outputs. The following strategies were used:
+The following strategies were used to provide structured AI outputs. :
 
 ### **Module 1: Auto-Category & Tag Generator**
 * **Objective**: Transform raw product text into structured e-commerce metadata.
